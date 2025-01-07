@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ریال به تومان</title>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">ریال به تومان</div>
+        <div class="input-group">
+            <input id="amount" type="number" placeholder="مبلغ را وارد کنید">
+        </div>
+        <div class="input-group">
+            <select id="conversion-type">
+                <option value="rial-to-toman">ریال به تومان</option>
+                <option value="toman-to-rial">تومان به ریال</option>
+            </select>
+        </div>
+        <button class="button" id="convert">تبدیل</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
