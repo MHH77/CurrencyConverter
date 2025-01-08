@@ -2,12 +2,16 @@
     "manifest_version": 3,
     "name": "Currency Converter",
     "version": "1.0",
-    "description": "Convert currency to Iranian Rial",
-    "permissions": [],
-    "action": {
-        "default_popup": "popup.html"
-    },
+    "description": "A user-friendly currency converter that allows you to effortlessly convert amounts between Iranian Rial and Toman. Simply enter the amount, select the conversion type, and get instant results displayed in both words and numbers.",
     "permissions": [
         "activeTab"
-    ]
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "16.png",
+            "48": "48.png",
+            "128": "128.png"
+        }
+    }
 }

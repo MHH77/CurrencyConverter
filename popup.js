@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const conversionTypeSelect = document.getElementById("conversion-type");
     const convertButton = document.getElementById("convert");
     const resultParagraph = document.getElementById("result");
+    const contactButton = document.getElementById("contact-button");
+
 
     function toWords(num) {
         const numbers = {
@@ -92,27 +94,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     convertButton.addEventListener("click", function () {
         const amount = parseFloat(amountInput.value);
+        if (amount < 0) {
+            alert("لطفاً یک عدد مثبت وارد کنید.");
+            return;
+        }
+
         const conversionType = conversionTypeSelect.value;
 
         if (conversionType === "rial-to-toman") {
-            const toman = amount / 10;
+            const toman = Math.floor(amount / 10); // نادیده گرفتن رقم آخر
             resultParagraph.innerText = `مبلغ ${toWords(Math.floor(amount))} ریال برابر است با ${toman.toLocaleString('fa-IR')} تومان`;
         } else if (conversionType === "toman-to-rial") {
-            const rial = amount * 10;
+            const rial = Math.floor(amount * 10);
             resultParagraph.innerText = `مبلغ ${toWords(Math.floor(amount))} تومان برابر است با ${rial.toLocaleString('fa-IR')} ریال`;
         }
     });
 
     amountInput.addEventListener("input", function () {
         const amount = parseFloat(amountInput.value);
+        if (amount < 0) {
+            alert("لطفاً یک عدد مثبت وارد کنید.");
+            return;
+        }
+
         const conversionType = conversionTypeSelect.value;
 
         if (conversionType === "rial-to-toman") {
-            const toman = amount / 10;
+            const toman = Math.floor(amount / 10);
             resultParagraph.innerText = `مبلغ ${toWords(Math.floor(amount))} ریال برابر است با ${toman.toLocaleString('fa-IR')} تومان`;
         } else if (conversionType === "toman-to-rial") {
-            const rial = amount * 10;
+            const rial = Math.floor(amount * 10);
             resultParagraph.innerText = `مبلغ ${toWords(Math.floor(amount))} تومان برابر است با ${rial.toLocaleString('fa-IR')} ریال`;
         }
     });
+
+    contactButton.addEventListener("click", function () {
+        alert("برای تماس با ما، لطفاً به آدرس ایمیل example@example.com مراجعه کنید.");
+    });
+
 });
