@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const conversionType = conversionTypeSelect.value;
 
         if (conversionType === "rial-to-toman") {
-            const toman = Math.floor(amount / 10); // نادیده گرفتن رقم آخر
+            const toman = Math.floor(amount / 10);
             resultParagraph.innerText = `مبلغ ${toWords(Math.floor(amount))} ریال برابر است با ${toman.toLocaleString('fa-IR')} تومان`;
         } else if (conversionType === "toman-to-rial") {
             const rial = Math.floor(amount * 10);
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     contactButton.addEventListener("click", function () {
-        alert("برای تماس با ما، لطفاً به آدرس ایمیل example@example.com مراجعه کنید.");
+        alert(" آدرس ایمیل mesfandiari77@gmail.com ");
     });
 
 });

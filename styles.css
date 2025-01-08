@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Vazir&display=swap');
-
 @font-face {
     font-family: 'Vazir';
     src: url('fonts/Vazirmatn-Bold.woff2') format('woff2'),
-        /* برای مرورگرهای مدرن */
         url('fonts/Vazirmatn-Bold.ttf') format('truetype');
-    /* برای مرورگرهای قدیمی‌تر */
     font-weight: normal;
     font-style: normal;
 }
