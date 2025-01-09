@@ -44,4 +44,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
   **A**: Yes, contributions are welcome! Please follow the contributing guidelines in the repository.
 
 ## Contact
-For any inquiries or feedback, please reach out to the project maintainer at [your-email@example.com].
+For any inquiries or feedback, please reach out to the project maintainer at [mesfandiari77@gmail.com].
